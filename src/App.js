@@ -2,6 +2,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Post from './Post';
+import NewPost from './NewPost';
 
 const BASE_URL = 'http://localhost:8000/'
 
@@ -40,6 +41,9 @@ function App() {
             <Post post ={post}/>
           ))
         }
+      </div>
+      <div className='new_post'>
+        <NewPost />
       </div>
     </div>
   );
